@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agenda de Contatos</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="./main.css">
+    <!-- link das fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
+
+    <!-- link box icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <i class="bx bxs-contact bx-lg"></i>
+            <h1>Agenda de Contatos</h1> 
+        </header>
+        <form id="form-agenda">
+            <input type="text" id="contact-name" required placeholder="Nome do contato" onchange="validaNome()" />
+            <input type="number" id="contact-number" required placeholder="Telefone do contato"/>
+            <button type="submit">Salvar</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome do Contato</th>
+                    <th>Telefone do Contato</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+    </div>    
+</body>
+<!-- link js -->
+<script src="./main.js"></script>
+</html>
